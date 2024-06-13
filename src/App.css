@@ -1,0 +1,130 @@
+body{
+  font-family: Arial, sans-serif;
+  
+  margin: 0;
+  background-color: #E6CEB6;
+}
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: E6CEB6;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E6CEB6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* to do list */
+.main{
+  width: 55%;
+  margin: auto;
+  height: 450px;
+  border-radius: 25px;
+  display: flex;
+ flex-direction: column;
+  overflow-x:hidden;
+  overflow-y:scroll ;
+}
+.main h1{
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+
+}
+form {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  gap: 7px;
+  justify-content: space-evenly;
+  position: sticky;
+  z-index: 10;
+  top: 35px;
+
+}
+
+
+form input {
+  height: 40px;
+  font-size: 25px;
+  padding-left: 20px ;
+  width: 60%;
+}
+
+form button {
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius:15px ;
+  color: white;
+  background-color: blue;
+  width: 150px;
+}
+
+.outerdiv {
+  margin: 0px auto;
+  width: 90%;
+}
+
+.outerdiv ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  }
+  
+  .outerdiv ul li {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  font-size: 25px;
+  cursor: pointer ;
+  
+}
+form input{
+  border-radius: 15px;
+  font-size: 15px;
+}
+.outerdiv ul li span {
+position: absolute;
+right: 10px;
+top: 5px;
+font-size: 35px;
+cursor: pointer;
+
+}
+li.done{
+  cursor: pointer ;
+  background-color: yellow !important;
+  color: black !important;
+  text-decoration:line-through red 2px;
+}
